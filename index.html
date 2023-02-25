@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <style>
+        .crdblur:hover{
+          opacity: .5;
+        }
+       .crdblur:hover .cardzoom{
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <nav
+    class="xl:px-32 flex-no-wrap relative flex w-full items-center justify-between bg-white py-4 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start"
+    data-te-navbar-ref>
+    <div class="flex w-full flex-wrap items-center justify-between">
+      <button
+        class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+        type="button"
+        data-te-collapse-init
+        data-te-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent1"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="[&>svg]:w-7">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-7 w-7">
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+      </button>
+      <div
+        >
+        <a
+          class="mt-2 mr-3 flex items-center text-neutral-900 hover:text-teal-400 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mt-0"
+          href="#">
+          <img
+            src="./image/hau_gitschberge_horizontal 1.png"
+            style="height: 50px"
+            alt=""
+            loading="lazy" />
+        </a>
+      </div>
+      <!-- Collapsible wrapper -->
+      <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+      id="navbarSupportedContent1"
+      data-te-collapse-item>
+        <ul 
+        class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
+        data-te-navbar-nav-ref>
+        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+            href="#"
+            data-te-nav-link-ref
+            >HOME</a
+          >
+        </li>
+        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+            href="#"
+            data-te-nav-link-ref
+            >
+            <select data-te-select-init data-te-select-auto-select="true" class="bg-white">
+              <option value="0">BLOG</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+            </select>
+            </a
+          >
+        </li>
+        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+            href="#"
+            data-te-nav-link-ref
+            >
+            <select data-te-select-init data-te-select-auto-select="true" class="bg-white">
+              <option value="0">FEATURES</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+            </select>
+            </a
+          >
+        </li>
+        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+            href="#"
+            data-te-nav-link-ref
+            >
+            <select data-te-select-init data-te-select-auto-select="true" class="bg-white">
+              <option value="0">CATEGORIES</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+            </select>
+            </a
+          >
+        </li>
+        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="#"
+            data-te-nav-link-ref
+            >ABOUT</a
+          >
+        </li>
+        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="#"
+            data-te-nav-link-ref
+            >CONTACT</a
+          >
+        </li>
+        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+            href="#"
+            data-te-nav-link-ref
+            >
+            <select data-te-select-init data-te-select-auto-select="true" class="bg-white">
+              <option value="0">SHOP</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+            </select>
+            </a
+          >
+        </li>
+        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="#"
+            data-te-nav-link-ref
+            >PORTFOLIO</a
+          >
+        </li>
+        <li class="lg:pr-2 mx-3" data-te-nav-item-ref>
+          <a
+            class="text-neutral-500 hover:text-teal-400 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+            href="#"
+            data-te-nav-link-ref
+            >
+            <input
+                class="mt-[0.3rem] mr-2 h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-[rgba(0,0,0,0.25)] outline-none before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-white after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-black checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-white checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-black checked:focus:bg-black checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s]"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault" />
+            </a
+          >
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-[#E7F2ED] p-12">
+    <div class="flex justify-between px-32 bg-[#E7F2ED]
+    ">
+      <div class="mt-10"><img src="./image/Rectangle 65.png" alt=""></div>
+      <div ><img src="./image/Rectangle66-2.png" alt=""></div>
+      <div class="mt-10"><img src="./image/Rectangle 67.png" alt=""></div>
+    </div>
+    <div class="text-center">
+      <span class="italic" style="font-family: 'Playfair Display', serif;">HEY THERE</span>
+      <h1 class="italic text-6xl"  style="font-family: 'Playfair Display', serif;">I’m Haus</h1>
+      <div class="mt-5 px-32">
+        <span class="italic text-neutral-700" style="font-family: 'Playfair Display', serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero ex, tristique sed dignissim vel, cursus ut magna. Aenean lacinia mi eget orci aliquet pharetra. Duis ut ultricies felis. Nulla vitae mi dictum, scelerisque nibh eget, sagittis ligula.Nulla tortor quam, feugiat id laoreet ac, pellentesque sed tellus. Nunc condimentum, magna vel sodales mollis, nisl nibh ornare eros, vel malesuada nunc metus at elit. Aenean vitae arcu auctor, imperdiet nisl quis, interdum lacus.</span>
+      </div>
+    </div>
+    <div class="mt-5">
+      <div class="flex justify-center space-x-2">
+        <div class="flex justify-center space-x-2">
+          <button
+            type="button"
+            class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-6 pt-2.5 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] text-xl hover:text-white" style="font-family: 'Playfair Display', serif;">
+            READ THE WHOLE STORY
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-3 bg-[#F2F2E6] ">
+    <div class="justify-self-end"><img class="h-96 min-w-min" src="./image/Rectangle68-1.png" alt="..."></div>
+    <div class="col-span-2"><h1 class="italic text-4xl mt-10 border-b-4 border-[#0B8497]"  style="font-family: 'Playfair Display', serif;">Condimentum Magna Vel Sodales Mollis Nisl Nibh Ornare Eros</h1>
+      <div class="mt-5">
+        <span class="italic text-neutral-700" style="font-family: 'Playfair Display', serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero ex, tristique sed dignissim vel, cursus ut magna. Aenean lacinia mi eget orci aliquet pharetra. Duis ut ultricies felis. Nulla vitae mi dictum, scelerisque nibh eget, sagittis ligula.Nulla tortor quam, feugiat id laoreet ac, pellentesque sed tellus. Nunc condimentum, magna vel sodales mollis, nisl nibh ornare eros, vel malesuada nunc metus at elit. Aenean vitae arcu auctor, imperdiet nisl quis, interdum lacus.</span>
+      </div>
+      <div class="mt-10">
+        <button
+              type="button"
+              class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-6 pt-2.5 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] text-xl hover:text-white" style="font-family: 'Playfair Display', serif;">
+              GET STARTED
+            </button>
+      </div>
+    </div>
+    
+  </div>
+  <div class="p-32 grid grid-cols-3 gap-6">
+    <div class="grid gap-28">
+      <div class="relative crdblur">
+        <img src="./image/20 22.png" alt="">
+        <div class="cardzoom bg-white  absolute top-[42%] right-[35%]">
+          <h3 class="bg-white p-5 ">ARCHITECTURE</h3>
+        </div>
+      </div>
+      <div class="relative crdblur">
+        <img src="./image/7 1.png" alt="">
+        <div class="cardzoom bg-white  absolute top-[42%] right-[35%]">
+          <h3 class="bg-white p-5 ">PHOTOGRAPHY</h3>
+        </div>
+      </div>
+      
+      
+    </div>
+    <div class="text-center relative top-1/3">
+      <h3 class="italic text-neutral-700" style="font-family: 'Playfair Display', serif;">THE PORTFOLIO</h3>
+      <h1 class="italic text-6xl"  style="font-family: 'Playfair Display', serif;">VIEW
+        RECENT
+        WORK</h1>
+    </div>
+    <div class="grid gap-28">
+      <div class="relative crdblur">
+        <img src="./image/21 1.png" alt="">
+        <div class="cardzoom bg-white  absolute top-[42%] right-[35%]">
+          <h3 class="bg-white p-5 ">INTERIOR</h3>
+        </div>
+      </div>
+      <div class="relative crdblur">
+        <img src="./image/22 1.png" alt="">
+        <div class="cardzoom bg-white  absolute top-[42%] right-[35%]">
+          <h3 class=" p-5">ANIMAL</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-2 px-32 bg-[#E7F2ED]">
+    <div class="border-r-2 border-[#D0D0A7] justify-self-end">
+      <div class="col-span-2"><h1 class="italic text-4xl mt-10 border-b-4 border-[#0B8497]"  style="font-family: 'Playfair Display', serif;">Tools For Creatives</h1>
+        <div class="mt-5">
+          <span class="italic text-neutral-700" style="font-family: 'Playfair Display', serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</span>
+        </div>
+        <div class="mt-10">
+          <button
+                type="button"
+                class="inline-block rounded bg-[#E7F2ED] border-2 border-[#D0D0A7] px-6 pt-2.5 pb-2  font-medium uppercase leading-normal  hover:bg-[#D0D0A7] text-xl hover:text-white" style="font-family: 'Playfair Display', serif;">
+                GET STARTED
+              </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img src="./image/2divphoto.png" alt="">
+    </div>
+  </div>
+  <div class="px-32 py-12">
+    <section class="text-neutral-700 dark:text-neutral-300">
+      <div class="grid gap-6 text-center md:grid-cols-3">
+        <div>
+          <div>
+            <div class="pb-20 px-14 border-2 rounded-2  border-[#D0D0A7] hover:bg-[#E7F2ED]">
+              <p class="mt-4">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+              </p>
+            </div>
+            <div
+              class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-[#D0D0A7] bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              <img
+                src="./image/Ellipse 10.png" />
+            </div>
+            
+          </div>
+        </div>
+        <div>
+          <div>
+            <div class="pb-20 px-14 border-2 rounded-2  border-[#D0D0A7] hover:bg-[#E7F2ED]">
+              <p class="mt-4">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+              </p>
+            </div>
+            <div
+              class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-[#D0D0A7] bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              <img
+                src="./image/Ellipse 10 (1).png" />
+            </div>
+            
+          </div>
+        </div>
+        <div>
+          <div>
+            <div class="pb-20 px-14 border-2 rounded-2  border-[#D0D0A7] hover:bg-[#E7F2ED]">
+              <p class="mt-4">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+              </p>
+            </div>
+            <div
+              class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-[#D0D0A7] bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              <img
+                src="./image/Ellipse 10 (2).png" />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="p-20 bg-[#E7F2ED]">
+    <div
+  id="carouselDarkVariant"
+  class="relative"
+  data-te-carousel-init
+  data-te-carousel-slide>
+  <!-- Indicators -->
+  <div
+    class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+    data-te-carousel-indicators>
+    <button
+      data-te-target="#carouselDarkVariant"
+      data-te-slide-to="0"
+      data-te-carousel-active
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-current="true"
+      aria-label="Slide 1"></button>
+    <button
+      data-te-target="#carouselDarkVariant"
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      data-te-slide-to="1"
+      aria-label="Slide 1"></button>
+    <button
+      data-te-target="#carouselDarkVariant"
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      data-te-slide-to="2"
+      aria-label="Slide 1"></button>
+  </div>
+  <!-- Inner -->
+  <div
+    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+    <!-- Single item -->
+    <div
+      class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-fade
+      data-te-carousel-item
+      data-te-carousel-active>
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp"
+        class="block w-full"
+        alt="Motorbike Smoke" />
+      <div
+        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
+        <h5 class="text-xl">First slide label</h5>
+        <p>
+          Some representative placeholder content for the first slide.
+        </p>
+      </div>
+    </div>
+    <!-- Single item -->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-fade
+      data-te-carousel-item>
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp"
+        class="block w-full"
+        alt="Mountaintop" />
+      <div
+        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
+        <h5 class="text-xl">Second slide label</h5>
+        <p>
+          Some representative placeholder content for the second slide.
+        </p>
+      </div>
+    </div>
+    <!-- Single item -->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-fade
+      data-te-carousel-item>
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp"
+        class="block w-full"
+        alt="Woman Reading a Book" />
+      <div
+        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
+        <h5 class="text-xl">Third slide label</h5>
+        <p>
+          Some representative placeholder content for the third slide.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+  <!-- Controls -->
+  <button
+    class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-te-target="#carouselDarkVariant"
+    data-te-slide="prev">
+    <span class="inline-block h-8 w-8 dark:grayscale dark:invert">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Previous</span
+    >
+  </button>
+  <button
+    class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-te-target="#carouselDarkVariant"
+    data-te-slide="next">
+    <span class="inline-block h-8 w-8 dark:grayscale dark:invert">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Next</span
+    >
+  </button>
+</div>
+</div>
+<div>
+  <div>
+    <div></div>
+  </div>
+  <div></div>
+</div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
+
+
